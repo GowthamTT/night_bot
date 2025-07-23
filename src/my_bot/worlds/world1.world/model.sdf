@@ -1,0 +1,868 @@
+<?xml version='1.0'?>
+<sdf version='1.7'>
+  <model name='world1.world'>
+    <model name='world1'>
+      <model name='cabinet'>
+        <static>1</static>
+        <link name='cabinet_bottom_plate'>
+          <inertial>
+            <pose>0 0 -1 0 -0 0</pose>
+            <inertia>
+              <ixx>2.05</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>2.05</iyy>
+              <iyz>0</iyz>
+              <izz>2.05</izz>
+            </inertia>
+            <mass>25</mass>
+          </inertial>
+          <collision name='cabinet_bottom_plate_geom'>
+            <pose>0 0 0.01 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.45 0.02</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name='cabinet_bottom_plate_geom_visual'>
+            <pose>0 0 0.01 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.45 0.02</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='cabinet_bottom_plate_geom_cabinet_back_plate'>
+            <pose>0.235 0 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.02 0.45 1.02</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name='cabinet_bottom_plate_geom_cabinet_back_plate_visual'>
+            <pose>0.235 0 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.02 0.45 1.02</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='cabinet_bottom_plate_geom_cabinet_left_plate'>
+            <pose>0 0.235 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.02 1.02</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name='cabinet_bottom_plate_geom_cabinet_left_plate_visual'>
+            <pose>0 0.235 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.02 1.02</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='cabinet_bottom_plate_geom_cabinet_middle_plate'>
+            <pose>0 0 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.45 0.02</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name='cabinet_bottom_plate_geom_cabinet_middle_plate_visual'>
+            <pose>0 0 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.45 0.02</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='cabinet_bottom_plate_geom_cabinet_right_plate'>
+            <pose>0 -0.235 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.02 1.02</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name='cabinet_bottom_plate_geom_cabinet_right_plate_visual'>
+            <pose>0 -0.235 0.51 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.02 1.02</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+          <collision name='cabinet_bottom_plate_geom_cabinet_top_plate'>
+            <pose>0 0 1.01 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.45 0.02</size>
+              </box>
+            </geometry>
+          </collision>
+          <visual name='cabinet_bottom_plate_geom_cabinet_top_plate_visual'>
+            <pose>0 0 1.01 0 -0 0</pose>
+            <geometry>
+              <box>
+                <size>0.45 0.45 0.02</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>0.184719 -1.90645 -0.104138 0 -0 0</pose>
+      </model>
+      <model name='coke_can'>
+        <link name='link'>
+          <inertial>
+            <pose>0 0 0.06 0 -0 0</pose>
+            <mass>0.39</mass>
+            <inertia>
+              <ixx>0.00055575</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.00055575</iyy>
+              <iyz>0</iyz>
+              <izz>0.0001755</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://coke_can/meshes/coke_can.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>1</mu>
+                  <mu2>1</mu2>
+                </ode>
+              </friction>
+              <contact>
+                <ode>
+                  <kp>1e+07</kp>
+                  <kd>1</kd>
+                  <min_depth>0.001</min_depth>
+                  <max_vel>0.1</max_vel>
+                </ode>
+              </contact>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://coke_can/meshes/coke_can.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+        </link>
+        <pose>0.180385 -1.92189 0.807336 0 -0 0</pose>
+      </model>
+      <model name='coke_can_0'>
+        <link name='link'>
+          <inertial>
+            <pose>0 0 0.06 0 -0 0</pose>
+            <mass>0.39</mass>
+            <inertia>
+              <ixx>0.00055575</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.00055575</iyy>
+              <iyz>0</iyz>
+              <izz>0.0001755</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://coke_can/meshes/coke_can.dae</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>1</mu>
+                  <mu2>1</mu2>
+                </ode>
+              </friction>
+              <contact>
+                <ode>
+                  <kp>1e+07</kp>
+                  <kd>1</kd>
+                  <min_depth>0.001</min_depth>
+                  <max_vel>0.1</max_vel>
+                </ode>
+              </contact>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <pose>0.003937 0.004724 -0.18 0 -0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>model://coke_can/meshes/coke_can.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+        </link>
+        <pose>0.937934 -1.50424 -0.104138 0 -0 0</pose>
+      </model>
+      <model name='disk_part'>
+        <link name='link'>
+          <inertial>
+            <pose>0 0 0.02895 0 -0 0</pose>
+            <mass>0.5</mass>
+            <inertia>
+              <ixx>0.00321218</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.00321218</iyy>
+              <iyz>0</iyz>
+              <izz>0.00614499</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <pose>0 0 0.02895 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <length>0.0579</length>
+                <radius>0.15678</radius>
+              </cylinder>
+            </geometry>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://disk_part/meshes/disk.dae</uri>
+              </mesh>
+            </geometry>
+            <material>
+              <script>
+                <uri>model://arm_part/materials/scripts</uri>
+                <uri>model://arm_part/materials/textures</uri>
+                <name>ArmPart/Diffuse</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>0.2101 -1.47481 -0.104138 0 -0 0</pose>
+      </model>
+      <model name='fountain'>
+        <static>1</static>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://fountain/meshes/fountain.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://fountain/meshes/fountain.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+        </link>
+        <pose>1.66224 -0.408734 -0.104138 0 -0 0</pose>
+      </model>
+      <model name='postbox'>
+        <static>1</static>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://postbox/meshes/postbox.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://postbox/meshes/postbox.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+        </link>
+        <pose>0.340331 1.32947 -0.104138 0 -0 0</pose>
+      </model>
+      <model name='postbox_0'>
+        <static>1</static>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>model://postbox/meshes/postbox.dae</uri>
+              </mesh>
+            </geometry>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://postbox/meshes/postbox.dae</uri>
+              </mesh>
+            </geometry>
+          </visual>
+        </link>
+        <pose>-2.23613 1.40069 -0.104138 0 -0 0</pose>
+      </model>
+      <model name='wooden_board'>
+        <link name='base'>
+          <pose>0 0 0.00523 0 -0 0</pose>
+          <inertial>
+            <mass>0.2765</mass>
+            <inertia>
+              <ixx>0.0025148</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.00024037</iyy>
+              <iyz>0</iyz>
+              <izz>0.00275013</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <box>
+                <size>0.1016 0.3302 0.01046</size>
+              </box>
+            </geometry>
+            <surface>
+              <contact>
+                <poissons_ratio>0.347</poissons_ratio>
+                <elastic_modulus>8.8e+09</elastic_modulus>
+                <ode>
+                  <kp>100000</kp>
+                  <kd>100</kd>
+                  <max_vel>100</max_vel>
+                  <min_depth>0.001</min_depth>
+                </ode>
+              </contact>
+              <friction>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <use_patch_radius>0</use_patch_radius>
+                  <surface_radius>0.01</surface_radius>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <box>
+                <size>0.1016 0.3302 0.01046</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Wood</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='tee_nut_1'>
+            <pose>0 -0.116 0 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.00635</radius>
+                <length>0.0105646</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='tee_nut_2'>
+            <pose>0 -0.038 0 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.00635</radius>
+                <length>0.0105646</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='tee_nut_3'>
+            <pose>0 0.038 0 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.00635</radius>
+                <length>0.0105646</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+          <visual name='tee_nut_4'>
+            <pose>0 0.116 0 0 -0 0</pose>
+            <geometry>
+              <cylinder>
+                <radius>0.00635</radius>
+                <length>0.0105646</length>
+              </cylinder>
+            </geometry>
+            <material>
+              <script>
+                <uri>file://media/materials/scripts/gazebo.material</uri>
+                <name>Gazebo/Grey</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+        <pose>-1.88167 2.34918 -0.104138 0 -0 0</pose>
+      </model>
+      <model name='zephyr_delta_wing'>
+        <pose>0.602089 2.13677 -0.078368 0 -0 0</pose>
+        <link name='wing'>
+          <inertial>
+            <pose>0 -0.12 0 0 -0 0</pose>
+            <mass>1.5</mass>
+            <inertia>
+              <ixx>0.0831371</ixx>
+              <ixy>0</ixy>
+              <iyy>0.387382</iyy>
+              <ixz>0</ixz>
+              <iyz>0</iyz>
+              <izz>0.469845</izz>
+            </inertia>
+          </inertial>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://zephyr_delta_wing/meshes/wing.dae</uri>
+                <submesh>
+                  <name>Wing</name>
+                  <center>1</center>
+                </submesh>
+              </mesh>
+            </geometry>
+          </visual>
+          <collision name='body_collision'>
+            <geometry>
+              <mesh>
+                <uri>model://zephyr_delta_wing/meshes/wing.dae</uri>
+                <submesh>
+                  <name>Wing</name>
+                  <center>1</center>
+                </submesh>
+              </mesh>
+            </geometry>
+          </collision>
+          <collision name='right_rudder_collision'>
+            <pose>-0.76435 0.33918 0.002 -0.03 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.005 0.12993 0.12688</size>
+              </box>
+            </geometry>
+          </collision>
+          <collision name='left_rudder_collision'>
+            <pose>0.76435 0.33918 0.002 -0.03 0 0</pose>
+            <geometry>
+              <box>
+                <size>0.005 0.12993 0.12688</size>
+              </box>
+            </geometry>
+          </collision>
+          <sensor name='gps_sensor' type='gps'>
+            <pose>0 0 0 0 -0 0</pose>
+            <update_rate>10</update_rate>
+            <always_on>1</always_on>
+            <gps>
+              <position_sensing>
+                <horizontal>
+                  <noise type='gaussian_quantized'>
+                    <mean>0</mean>
+                    <stddev>1</stddev>
+                    <bias_mean>3</bias_mean>
+                    <bias_stddev>1</bias_stddev>
+                    <precision>0.5</precision>
+                  </noise>
+                </horizontal>
+                <vertical>
+                  <noise type='gaussian_quantized'>
+                    <mean>0</mean>
+                    <stddev>1</stddev>
+                    <bias_mean>3</bias_mean>
+                    <bias_stddev>1</bias_stddev>
+                    <precision>1</precision>
+                  </noise>
+                </vertical>
+              </position_sensing>
+              <velocity_sensing>
+                <horizontal>
+                  <noise type='gaussian_quantized'>
+                    <mean>0</mean>
+                    <stddev>0.1</stddev>
+                    <bias_mean>0.1</bias_mean>
+                    <bias_stddev>0.1</bias_stddev>
+                    <precision>0.1</precision>
+                  </noise>
+                </horizontal>
+                <vertical>
+                  <noise type='gaussian_quantized'>
+                    <mean>0</mean>
+                    <stddev>0.2</stddev>
+                    <bias_mean>0.2</bias_mean>
+                    <bias_stddev>0.2</bias_stddev>
+                    <precision>0.2</precision>
+                  </noise>
+                </vertical>
+              </velocity_sensing>
+            </gps>
+          </sensor>
+        </link>
+        <link name='propeller'>
+          <pose>0 0.07 0.008 0 1.5707 0</pose>
+          <inertial>
+            <mass>0.05</mass>
+            <inertia>
+              <ixx>0.000367571</ixx>
+              <ixy>0</ixy>
+              <iyy>0.00036985</iyy>
+              <ixz>0</ixz>
+              <iyz>0</iyz>
+              <izz>3.187e-06</izz>
+            </inertia>
+          </inertial>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://zephyr_delta_wing/meshes/wing.dae</uri>
+                <submesh>
+                  <name>Propeller</name>
+                  <center>1</center>
+                </submesh>
+              </mesh>
+            </geometry>
+          </visual>
+          <collision name='blade1'>
+            <pose>0 0 0.074205 0 -0 0.3</pose>
+            <geometry>
+              <box>
+                <size>0.02561 0.00541 0.14841</size>
+              </box>
+            </geometry>
+          </collision>
+          <collision name='blade2'>
+            <pose>0 0 -0.074205 0 0 -0.3</pose>
+            <geometry>
+              <box>
+                <size>0.02561 0.00541 0.14841</size>
+              </box>
+            </geometry>
+          </collision>
+        </link>
+        <link name='flap_left'>
+          <pose>0.453 0.239 0.007 0 -0 0</pose>
+          <inertial>
+            <pose>0 0 0 0 -0 0.324457</pose>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.000102319</ixx>
+              <ixy>0</ixy>
+              <iyy>0.00334417</iyy>
+              <ixz>0</ixz>
+              <iyz>0</iyz>
+              <izz>0.00344607</izz>
+            </inertia>
+          </inertial>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://zephyr_delta_wing/meshes/wing.dae</uri>
+                <submesh>
+                  <name>Flap_Left</name>
+                  <center>1</center>
+                </submesh>
+              </mesh>
+            </geometry>
+          </visual>
+          <collision name='collision'>
+            <pose>-0.01 0.01 0 0 -0 0.324457</pose>
+            <geometry>
+              <box>
+                <size>0.633463 0.110694 0.005</size>
+              </box>
+            </geometry>
+          </collision>
+        </link>
+        <link name='flap_right'>
+          <pose>-0.453 0.239 0.007 0 -0 0</pose>
+          <inertial>
+            <pose>0 0 0 0 0 -0.324457</pose>
+            <mass>0.1</mass>
+            <inertia>
+              <ixx>0.000102319</ixx>
+              <ixy>0</ixy>
+              <iyy>0.00334417</iyy>
+              <ixz>0</ixz>
+              <iyz>0</iyz>
+              <izz>0.00344607</izz>
+            </inertia>
+          </inertial>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>model://zephyr_delta_wing/meshes/wing.dae</uri>
+                <submesh>
+                  <name>Flap_Right</name>
+                  <center>1</center>
+                </submesh>
+              </mesh>
+            </geometry>
+          </visual>
+          <collision name='collision'>
+            <pose>0.01 0.01 0 0 0 -0.324457</pose>
+            <geometry>
+              <box>
+                <size>0.633463 0.110694 0.005</size>
+              </box>
+            </geometry>
+          </collision>
+        </link>
+        <joint name='propeller_joint' type='revolute'>
+          <parent>wing</parent>
+          <child>propeller</child>
+          <axis>
+            <xyz>0 -1 0</xyz>
+            <dynamics>
+              <damping>0.002</damping>
+              <spring_reference>0</spring_reference>
+              <spring_stiffness>0</spring_stiffness>
+            </dynamics>
+            <limit>
+              <lower>-1e+16</lower>
+              <upper>1e+16</upper>
+            </limit>
+          </axis>
+          <physics>
+            <ode>
+              <implicit_spring_damper>1</implicit_spring_damper>
+            </ode>
+          </physics>
+        </joint>
+        <joint name='flap_left_joint' type='revolute'>
+          <parent>wing</parent>
+          <child>flap_left</child>
+          <pose>0 -0.04 0 0 -0 0</pose>
+          <axis>
+            <xyz>1 0.330321 0</xyz>
+            <limit>
+              <lower>-0.524</lower>
+              <upper>0.524</upper>
+            </limit>
+            <dynamics>
+              <damping>0.1</damping>
+              <spring_reference>0</spring_reference>
+              <spring_stiffness>0</spring_stiffness>
+            </dynamics>
+          </axis>
+          <physics>
+            <ode>
+              <implicit_spring_damper>1</implicit_spring_damper>
+            </ode>
+          </physics>
+        </joint>
+        <joint name='flap_right_joint' type='revolute'>
+          <parent>wing</parent>
+          <child>flap_right</child>
+          <pose>0 -0.04 0 0 -0 0</pose>
+          <axis>
+            <xyz>1 -0.330321 0</xyz>
+            <limit>
+              <lower>-0.524</lower>
+              <upper>0.524</upper>
+            </limit>
+            <dynamics>
+              <damping>0.1</damping>
+              <spring_reference>0</spring_reference>
+              <spring_stiffness>0</spring_stiffness>
+            </dynamics>
+          </axis>
+          <physics>
+            <ode>
+              <implicit_spring_damper>1</implicit_spring_damper>
+            </ode>
+          </physics>
+        </joint>
+        <plugin name='invisible_canard' filename='libLiftDragPlugin.so'>
+          <a0>0.13</a0>
+          <cla>3.7</cla>
+          <cda>0.06417112299</cda>
+          <cma>-1.8</cma>
+          <alpha_stall>0.3391428111</alpha_stall>
+          <cla_stall>-3.85</cla_stall>
+          <cda_stall>-0.9233984055</cda_stall>
+          <cma_stall>0</cma_stall>
+          <cp>0 -0.1 0</cp>
+          <area>0.50</area>
+          <air_density>1.2041</air_density>
+          <forward>0 -1 0</forward>
+          <upward>0 0 1</upward>
+          <link_name>wing</link_name>
+        </plugin>
+        <plugin name='left_wing' filename='libLiftDragPlugin.so'>
+          <a0>0.15</a0>
+          <cla>6.8</cla>
+          <cda>0.06417112299</cda>
+          <cma>-1.8</cma>
+          <alpha_stall>0.6391428111</alpha_stall>
+          <cla_stall>-3.85</cla_stall>
+          <cda_stall>-0.9233984055</cda_stall>
+          <cma_stall>0</cma_stall>
+          <cp>0.7 0.20 0</cp>
+          <area>0.10</area>
+          <air_density>1.2041</air_density>
+          <forward>0 -1 0</forward>
+          <upward>0 0 1</upward>
+          <link_name>wing</link_name>
+          <control_joint_name>flap_left_joint</control_joint_name>
+          <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
+        </plugin>
+        <plugin name='right_wing' filename='libLiftDragPlugin.so'>
+          <a0>0.15</a0>
+          <cla>6.8</cla>
+          <cda>0.06417112299</cda>
+          <cma>-1.8</cma>
+          <alpha_stall>0.6391428111</alpha_stall>
+          <cla_stall>-3.85</cla_stall>
+          <cda_stall>-0.9233984055</cda_stall>
+          <cma_stall>0</cma_stall>
+          <cp>-0.7 0.20 0</cp>
+          <area>0.10</area>
+          <air_density>1.2041</air_density>
+          <forward>0 -1 0</forward>
+          <upward>0 0 1</upward>
+          <link_name>wing</link_name>
+          <control_joint_name>flap_right_joint</control_joint_name>
+          <control_joint_rad_to_cl>-5.0</control_joint_rad_to_cl>
+        </plugin>
+        <plugin name='left_rudder' filename='libLiftDragPlugin.so'>
+          <a0>0.0</a0>
+          <cla>4.752798721</cla>
+          <cda>0.6417112299</cda>
+          <cma>-1.8</cma>
+          <alpha_stall>0.3391428111</alpha_stall>
+          <cla_stall>-3.85</cla_stall>
+          <cda_stall>-0.9233984055</cda_stall>
+          <cma_stall>0</cma_stall>
+          <cp>-0.76 0.30 0.025</cp>
+          <area>0.12</area>
+          <air_density>1.2041</air_density>
+          <forward>0 -1 0</forward>
+          <upward>1 0 0</upward>
+          <link_name>wing</link_name>
+        </plugin>
+        <plugin name='right_rudder' filename='libLiftDragPlugin.so'>
+          <a0>0.0</a0>
+          <cla>4.752798721</cla>
+          <cda>0.6417112299</cda>
+          <cma>-1.8</cma>
+          <alpha_stall>0.3391428111</alpha_stall>
+          <cla_stall>-3.85</cla_stall>
+          <cda_stall>-0.9233984055</cda_stall>
+          <cma_stall>0</cma_stall>
+          <cp>0.76 0.30 0.025</cp>
+          <area>0.12</area>
+          <air_density>1.2041</air_density>
+          <forward>0 -1 0</forward>
+          <upward>1 0 0</upward>
+          <link_name>wing</link_name>
+        </plugin>
+        <plugin name='propeller_blade_1' filename='libLiftDragPlugin.so'>
+          <a0>0.30</a0>
+          <alpha_stall>1.4</alpha_stall>
+          <cla>4.2500</cla>
+          <cda>0.10</cda>
+          <cma>0.00</cma>
+          <cla_stall>-0.025</cla_stall>
+          <cda_stall>0.0</cda_stall>
+          <cma_stall>0.0</cma_stall>
+          <area>0.02</area>
+          <air_density>1.2041</air_density>
+          <cp>0 0 0.074205</cp>
+          <forward>-1 0 0</forward>
+          <upward>0 -1 0</upward>
+          <link_name>propeller</link_name>
+        </plugin>
+        <plugin name='propeller_blade_2' filename='libLiftDragPlugin.so'>
+          <a0>0.30</a0>
+          <alpha_stall>1.4</alpha_stall>
+          <cla>4.2500</cla>
+          <cda>0.10</cda>
+          <cma>0.00</cma>
+          <cla_stall>-0.025</cla_stall>
+          <cda_stall>0.0</cda_stall>
+          <cma_stall>0.0</cma_stall>
+          <area>0.02</area>
+          <air_density>1.2041</air_density>
+          <cp>0 0 -0.074205</cp>
+          <forward>1 0 0</forward>
+          <upward>0 -1 0</upward>
+          <link_name>propeller</link_name>
+        </plugin>
+      </model>
+      <static>0</static>
+      <allow_auto_disable>1</allow_auto_disable>
+      <pose>4e-06 -0 0 0 -0 0</pose>
+    </model>
+    <static>0</static>
+    <allow_auto_disable>1</allow_auto_disable>
+  </model>
+</sdf>
